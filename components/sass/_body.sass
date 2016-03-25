@@ -1,0 +1,125 @@
+.middle-divider
+  border-bottom: 10px solid $gold
+.middle-divider-thin
+  border-bottom: 3px solid lighten($gold, 20%)
+  // margin-bottom: 5px
+// .middle-divider-light
+//   border-bottom: 10px solid lighten($gold, 20%)
+
+blockquote
+  p
+    font-size: 2em
+    font-family: $dots
+    font-weight: 900
+
+.main
+  text-align: center
+
+// .divider
+//   height: 20px
+//   width: 100%
+//   background-color: $gold
+//   margin: 40px auto
+//   &:nth-child(2)
+//     margin-top: 500px
+
+.info_section
+  .info-img
+    text-align: center
+    margin: 80px 0
+    img
+      width: 80%
+      display: block
+      margin: auto
+      border-radius: 18px
+      border-top: 10px solid $mediumPink
+      transition: .5s
+      &:hover
+        transform: scale(1.2)
+
+.cream-lady
+  text-align: center
+  img
+    width: 100%
+    margin: 80px auto
+    border-radius: 18px
+    box-shadow: 0 0 10px 1px darken($purplePink, 10%)
+  ul
+    font-size: 2.5em
+    li
+      background: lighten($veryLightPink, 10%)
+      color: darken($mediumPink, 10%)
+      border: 2px solid $mediumPink
+  h1
+    margin-top: 28%
+    font-size: 5em
+    color: white
+    font-family: $kaushan
+    text-shadow: 0 0 10px darken($purplePink, 10%)
+
+.directions
+  img
+    display: block
+    margin: 80px auto
+    border-radius: 18px
+    box-shadow: 0 0 10px 1px darken($purplePink, 10%)
+
+aside
+  width: 300px
+  height: 50px
+  text-align: center
+  font-size: 3.5em
+  color: white
+  font-family: $checkfont
+  margin: 20px 0
+  line-height: 52px
+  position: relative
+  cursor: pointer
+  display: block
+  margin: 0px auto 70px
+  user-select: none
+  &:hover
+    top: -1px
+  &:active
+    top: 1px
+    &:before
+      left: -24px
+      border-width: 24px 24px 24px 0
+    &:after
+      right: -17px
+      border-width: 24px 0 24px 24px
+  &.ribbon
+    background-color: $color-ribbon
+    $color-ribbon: darken($color-ribbon, 10)
+    &:before, &:after
+      top: 5px
+      z-index: -10
+    &:before
+      border-color: $color-ribbon $color-ribbon $color-ribbon transparent
+      left: -25px
+      border-width: 24px
+    &:after
+      border-color: $color-ribbon transparent $color-ribbon $color-ribbon
+      right: -25px
+      border-width: 24px
+
+  // &.sheer
+  //   background-color: $color-sheer
+  //   left: -5px
+  //   width: 170px
+  //   &:after, &:before
+  //     border-width: 33px 10px 0 0
+  //   &:before
+  //     left: -10px
+  //     border-color: transparent $color-sheer
+  //   &:after
+  //     right: -10px
+  //     border-color: $color-sheer transparent
+
+aside:before, aside:after
+  content: ''
+  position: absolute
+  height: 0
+  width: 0
+  border-style: solid
+  border-width: 0

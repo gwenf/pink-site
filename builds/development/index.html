@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="dba">Wholesome Serum</title>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster+Two:400,400italic,700|Kaushan+Script|Satisfy|Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="top_bar">
+        <h1>Wholesome Serum</h1>
+        <h3>Revolutionizing Skin Care</h3>
+      </div>
+      <div class="header_img row"><img src="images/eyeSerumHeader.png" alt="" class="col-sm-7 col-sm-offset-1">
+        <form id="buyNow" class="col-sm-4 col-sm-pull-1">
+          <legend>Free Trial - Order Now</legend>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" placeholder="First Name" required="" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" placeholder="Last Name" required="" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input id="address" type="text" placeholder="Street Address" required="" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input id="city" type="text" placeholder="City" required="" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input id="state" type="text" placeholder="State" required="" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="zipCode">Zip</label>
+            <input id="zipCode" type="number" placeholder="Zip Code" required="" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" type="number" placeholder="phone" required="" class="form-control">
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" required="">
+            <label>
+               I agree to the Terms & Conditions and I
+                              am at least 18 years old. By placing your order
+                              today you'll be shipped a 30 day supply of
+                              Wholesome Serum for $4.95 S&H. All products
+                              ship within 1 business day and deliver in 2-4 days.
+                              Try it for 14 days (10 day trial plus 4 days added for
+                              transit time) call: 1-844-277-7717 to cancel.
+            </label>
+          </div>
+          <button type="submit" class="btn order-btn btn-pink">Order Now</button>
+        </form>
+      </div>
+    </header>
+    <div class="middle-divider-thin"></div>
+    <div class="middle-divider"></div>
+    <div class="middle-divider-thin"></div>
+    <div style="clear:both"></div>
+    <div class="main">
+      <blockquote>
+        <p>"For me, taking care of your skin is the most important step. You can cover it with all the makeup in the world and it'll neve be as nice as natural skin."</p>
+        <footer>Astrid Berges-Frisbey of
+          <cite title="Source Title">Lifehacks</cite>
+        </footer>
+      </blockquote>
+    </div>
+    <div style="clear:both">
+      <div class="middle-divider-thin"></div>
+      <div class="middle-divider"></div>
+      <div class="middle-divider-thin"></div>
+      <div style="clear:both"></div>
+      <div class="info_section col-xs-8 col-xs-offset-2">
+        <div class="info-img col-sm-4"><img src="images/coverUpIcon.png">
+          <h3>Do you try to hide under eye circles?</h3>
+        </div>
+        <div class="info-img col-sm-4"><img src="images/serumEyeIcon.png">
+          <h3>Have you tried a plethora of products to no avail?</h3>
+        </div>
+        <div class="info-img col-sm-4"><img src="images/nourishIcon.png">
+          <h3>Are you looking for a serum that hydrates and nourishes?</h3>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+      <div class="middle-divider-thin"></div>
+      <div class="middle-divider"></div>
+      <div class="middle-divider-thin"></div>
+      <div class="row cream-lady">
+        <div class="image-container col-sm-5 col-sm-offset-1"><img src="images/serumLady.png"></div>
+        <div class="main-text col-sm-5">
+          <h1>Wholesome Serum:</h1>
+          <p>
+            <ul class="list-group">
+              <li class="list-group-item">ULTRA HYDRATING FORMULA</li>
+              <li class="list-group-item">MAY REDUCE THE APPEARANCE OF WRINKLES</li>
+              <li class="list-group-item">MILD ENOUGH FOR BI-DAILY USE</li>
+              <li class="list-group-item">DOESN'T LEAVE YOUR FACE GREASY</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+      <div class="middle-divider-thin"></div>
+      <div class="middle-divider"></div>
+      <div class="middle-divider-thin"></div>
+      <div class="directions col-sm-8 col-sm-offset-2"><img src="images/howtoEyeCream.png"><a href="#buyNow">
+          <aside class="ribbon">Order Now</aside></a></div>
+    </div>
+    <div style="clear:both"></div>
+    <footer class="footer">
+      <div class="copyright row">
+        <div class="navbar footer-nav">
+          <ul class="nav text-center col-lg-8 col-lg-offset-2">
+            <li class="col-sm-3"><a href="#/privacy">Privacy Policy</a></li>
+            <li class="col-sm-3"><a href="#/terms">Terms & Conditions</a></li>
+            <li class="col-sm-3"><a href="#/ingredients">Ingredients</a></li>
+            <li class="col-sm-3"><a ng-click="modalShown=!modalShown">Contact</a></li>
+          </ul>
+          <p class="col-xs-12 copy-text">&copy 2016 <span class="dba">WholesomeSerum.com </span>- All Rights Reserved</p>
+        </div>
+      </div>
+      <div class="disclaimer">
+        DISCLAIMER:
+        These statements have not been evaluated by the FDA and are not intended
+        to diagnose, treat, cure, or prevent any disease. Please consult your physician before beginning any
+        program. If there is a change in your medical condition, please notify your physician immediately. All
+        trademarks, logos, & service marks (collectively the "Trademarks") displayed are registered &/or
+        unregistered Trademarks of their respective owners. Contents of this website are copyrighted property of
+        FMG Capital, Inc., the owner of this website. Testimonials are actual quotes by real people who have used
+        our products; photos of product users are
+        either paid models who actually used our products, or stock photos. The photographs on our site are
+        simulated imagery to illustrate the kinds of results that may be achieved with our products. The results
+        described in the customer testimonials and depicted in the simulated imagery are not typical. Everyone's
+        skin is different and your results may vary. Read the Terms & Conditions for offer details. Offer available
+        while supplies last. Limit one trial bottle per household.
+      </div>
+    </footer>
+  </body>
+</html>

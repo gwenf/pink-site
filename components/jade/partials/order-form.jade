@@ -1,0 +1,34 @@
+form#buyNow.col-sm-4.col-sm-pull-1
+  legend Free Trial - Order Now
+  .form-group
+    label(for='firstName') First Name
+    input#firstName.form-control(type='text', placeholder='First Name', required='')
+  .form-group
+    label(for='lastName') Last Name
+    input#lastName.form-control(type='text', placeholder='Last Name', required='')
+  .form-group
+    label(for='address') Address
+    input#address.form-control(type='text', placeholder='Street Address', required='')
+  .form-group
+    label(for='city') City
+    input#city.form-control(type='text', placeholder='City', required='')
+  .form-group
+    label(for='state') State
+    input#state.form-control(type='text', placeholder='State', required='')
+  .form-group
+    label(for='zipCode') Zip
+    input#zipCode.form-control(type='number', placeholder='Zip Code', required='')
+  .form-group
+    label(for='phoneNumber') Phone Number
+    input#phoneNumber.form-control(type='number', placeholder='phone', required='')
+  .checkbox
+    input(type='checkbox', required='')
+    label
+      |  I agree to the Terms & Conditions and I
+      |                 am at least 18 years old. By placing your order
+      |                 today you'll be shipped a 30 day supply of
+      |                 Wholesome Serum for $4.95 S&H. All products
+      |                 ship within 1 business day and deliver in 2-4 days.
+      |                 Try it for 14 days (10 day trial plus 4 days added for
+      |                 transit time) call: 1-844-277-7717 to cancel.
+  button.btn.order-btn.btn-pink(type='submit') Order Now
