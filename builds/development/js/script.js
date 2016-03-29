@@ -19,7 +19,7 @@ $(document).ready(function(){
 // var Jquery = require('jquery');
 
 // DBA NAME GOES HERE
-$('.dba').text('Wholesome Cream');
+$('.dba').text('Wholesome Serum');
 
 // TERMS GO HERE, PLEASE ONLY USE SINGLE QUOTES INSIDE, NO DOUBLE QUOTES
 $('.terms').html("");

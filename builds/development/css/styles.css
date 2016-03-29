@@ -412,6 +412,14 @@ a, a:link, a:visited, a:hover, a:active {
   text-decoration: none !important;
 }
 
+.cart-header {
+  margin-bottom: 50px;
+}
+
+form #cart {
+  margin-top: 20%;
+}
+
 .top_bar {
   background: #fc6593;
   width: 380px;
@@ -458,13 +466,32 @@ form legend {
   font-size: 3em;
   font-family: "Kaushan Script", cursive;
 }
+@media (max-width: 1500px) {
+  form legend {
+    font-size: 2em;
+  }
+}
 form label {
   font-weight: 300;
   display: inline;
 }
+@media (max-width: 1500px) {
+  form {
+    margin-top: 0;
+  }
+}
+@media (max-width: 800px) {
+  form {
+    margin: 20px;
+  }
+}
 
 .checkbox input[type='checkbox'] {
   margin-left: 2px;
+}
+
+#buyNow button {
+  margin-bottom: 30px;
 }
 
 .middle-divider {
@@ -525,10 +552,17 @@ blockquote p {
   font-family: "Kaushan Script", cursive;
   text-shadow: 0 0 10px #9c2c4e;
 }
+@media (max-width: 1400px) {
+  .cream-lady h1 {
+    margin-top: 5%;
+    font-size: 3em;
+  }
+}
 
 .directions img {
   display: block;
   margin: 80px auto;
+  width: 100%;
   border-radius: 18px;
   box-shadow: 0 0 10px 1px #9c2c4e;
 }
@@ -589,6 +623,12 @@ aside:before, aside:after {
   border-width: 0;
 }
 
+@media (max-width: 1500px) {
+  .form-group {
+    margin-bottom: 5px;
+  }
+}
+
 footer {
   text-align: center;
 }
@@ -604,6 +644,11 @@ footer .copy-text {
 footer ul {
   margin: 20px inherit !important;
   margin-top: 50px;
+}
+@media (max-width: 768px) {
+  footer ul li {
+    padding: 0 !important;
+  }
 }
 footer ul li:hover {
   cursor: pointer;
@@ -622,6 +667,11 @@ footer ul a {
 }
 footer ul a:hover {
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  footer ul a:hover {
+    border-radius: 0;
+  }
 }
 footer .disclaimer {
   text-align: left;

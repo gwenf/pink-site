@@ -10,6 +10,9 @@ footer
   ul
     margin: 20px inherit !important
     margin-top: 50px
+    li
+      @media (max-width: 768px)
+        padding: 0 !important
     li:hover
       cursor: pointer
     a
@@ -22,6 +25,8 @@ footer
         font-size: 1.1em
       &:hover
         border-radius: 50%
+        @media (max-width: 768px)
+          border-radius: 0
   .disclaimer
     text-align: left
     padding: 12px

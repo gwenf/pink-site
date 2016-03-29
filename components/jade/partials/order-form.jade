@@ -1,4 +1,4 @@
-form#buyNow.col-sm-4.col-sm-pull-1
+form#buyNow.col-sm-4.col-sm-pull-1(action='cart.html',method='post')
   legend Free Trial - Order Now
   .form-group
     label(for='firstName') First Name
@@ -24,11 +24,8 @@ form#buyNow.col-sm-4.col-sm-pull-1
   .checkbox
     input(type='checkbox', required='')
     label
-      |  I agree to the Terms & Conditions and I
-      |                 am at least 18 years old. By placing your order
-      |                 today you'll be shipped a 30 day supply of
-      |                 Wholesome Serum for $4.95 S&H. All products
-      |                 ship within 1 business day and deliver in 2-4 days.
-      |                 Try it for 14 days (10 day trial plus 4 days added for
-      |                 transit time) call: 1-844-277-7717 to cancel.
+    | By submitting, you agree to having read and agreed to our Terms and Conditions and that you are 18 
+    | years old. You agree that you will be charged $3.95 for initial 14 day evaluation period 
+    | (10 day evaluation + 4 days transit) for Greatest Serum and charged every month $89.79 until canceled. 
+    | You can cancel anytime by calling 1-844-300-0666.
   button.btn.order-btn.btn-pink(type='submit') Order Now

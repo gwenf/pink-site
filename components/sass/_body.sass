@@ -56,11 +56,15 @@ blockquote
     color: white
     font-family: $kaushan
     text-shadow: 0 0 10px darken($purplePink, 10%)
+    @media (max-width: 1400px)
+      margin-top: 5%
+      font-size: 3em
 
 .directions
   img
     display: block
     margin: 80px auto
+    width: 100%
     border-radius: 18px
     box-shadow: 0 0 10px 1px darken($purplePink, 10%)
 
@@ -123,3 +127,7 @@ aside:before, aside:after
   width: 0
   border-style: solid
   border-width: 0
+
+.form-group
+  @media (max-width: 1500px)
+    margin-bottom: 5px

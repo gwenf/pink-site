@@ -1,0 +1,42 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    header
+      .top_bar
+        h1 Greatest Serum
+        h3 Revolutionizing Skin Care
+      .header_img.row.cart-header
+        img.col-sm-6.col-sm-offset-1(src="images/eyeSerumHeader.png", alt="")
+
+        form#cart.row(action='thankyou.html' method='post')
+          
+          fieldset.col-sm-3.col-sm-pull-1
+            legend Complete Your Order
+            .form-group
+              label(for='firstName') First Name
+              input#firstName.form-control(type='text', placeholder='First Name', required='')
+            .form-group
+              label(for='card_type') Card Type:
+              select#card_type.form-control
+                option VISA
+                option Mastercard
+                option Discover
+            .form-group
+              .input-group
+                span.input-group-addon Credit Card Number:
+                input#creditNum.form-control(type='number', placeholder='#', required='')
+            .form-group
+              .input-group
+                span.input-group-addon CVV:
+                input#cvv.form-control(type='number', placeholder='#', required='')
+            .checkbox.form-group
+              input(type='checkbox', required='')
+              label
+                | By submitting, you agree to having read and agreed to our Terms and Conditions and that you are 18 
+                | years old. You agree that you will be charged $4.95 for initial 14 day evaluation period 
+                | (10 day evaluation + 4 days transit) for Greatest Serum and charged every month $89.79 until canceled. 
+                | You can cancel anytime by calling 1-844-300-0666.
+            button.btn.order-btn.btn-pink(type='submit') Order Now
+          img(style='border: none; padding-top: 3%').col-sm-1.col-sm-pull-1(src='images/serumbottle.png', alt='')
+    include ./partials/footer.jade

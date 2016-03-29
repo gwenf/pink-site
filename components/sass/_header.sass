@@ -36,11 +36,19 @@ form
     color: $blue
     font-size: 3em
     font-family: $kaushan
-
+    @media (max-width: 1500px)
+      font-size: 2em
   label
     font-weight: 300
     display: inline
-
+  @media (max-width: 1500px)
+    margin-top: 0
+  @media (max-width: 800px)
+    margin: 20px
 .checkbox
   input[type='checkbox']
     margin-left: 2px
+
+#buyNow
+  button
+    margin-bottom: 30px
